@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -29,9 +30,11 @@ export default function Login() {
         <Button type="submit">Login</Button>
         <div className="text-center">
           Don&apos;t have an account?
-          <Button variant="link" size="sm">
-            Sign up
-          </Button>
+          <Link href="/signup">
+            <Button variant="link" size="sm">
+              Sign up
+            </Button>
+          </Link>
         </div>
       </main>
     </div>

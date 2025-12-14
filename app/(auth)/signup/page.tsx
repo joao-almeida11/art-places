@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Signup() {
   return (
@@ -41,7 +42,9 @@ export default function Signup() {
         <Button type="submit">Create your account</Button>
         <div className="text-center">
           Do you already have an account?
-          <Button variant="link">Login</Button>
+          <Link href="/login">
+            <Button variant="link">Login</Button>{" "}
+          </Link>
         </div>
       </main>
     </div>
