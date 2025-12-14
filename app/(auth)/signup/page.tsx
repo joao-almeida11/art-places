@@ -7,8 +7,8 @@ export default function Signup() {
     <div className="flex min-h-dvh items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-col gap-y-5 border border-slate-100 rounded-lg p-6 shadow-lg bg-white">
         <header>
-          <h1 className="text-center text-2xl mb-6 font-serif">Sign up</h1>
-          <p>Enter your name and email below to create to your account:</p>
+          <h1 className="text-center text-3xl mb-6 font-serif">Sign up</h1>
+          <p>Enter your name and email below to create your account:</p>
         </header>
         <div className="flex flex-col gap-y-2">
           <Label htmlFor="name">Name</Label>
@@ -28,6 +28,14 @@ export default function Signup() {
             type="password"
             id="password"
             placeholder="Please enter your password"
+          />
+        </div>
+        <div className="flex flex-col gap-y-2">
+          <Label htmlFor="confirmPassword">Confirm Password</Label>
+          <Input
+            type="password"
+            id="confirmPassword"
+            placeholder="Please enter again the password"
           />
         </div>
         <Button type="submit">Create your account</Button>
