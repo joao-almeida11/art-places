@@ -7,7 +7,7 @@ export default function Login() {
     <div className="flex min-h-dvh items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-col gap-y-5 border border-slate-100 rounded-lg p-6 shadow-lg bg-white">
         <header>
-          <h1 className="text-center text-2xl mb-6">Login</h1>
+          <h1 className="text-center text-2xl mb-6 font-serif">Login</h1>
           <p>Enter your email below to login to your account:</p>
         </header>
         <div className="flex flex-col gap-y-2">
