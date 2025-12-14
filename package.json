@@ -9,7 +9,9 @@
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "check-format": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,json,md,css,sass,scss}\"",
+    "format": "prettier --write \"./**/*.{ts,tsx,js,jsx,json,md,css,sass,scss}\""
   },
   "lint-staged": {
     "*.js": "eslint --fix",
