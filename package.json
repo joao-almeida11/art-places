@@ -11,7 +11,8 @@
     "build-storybook": "storybook build",
     "prepare": "husky",
     "check-format": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,json,md,css,sass,scss}\"",
-    "format": "prettier --write \"./**/*.{ts,tsx,js,jsx,json,md,css,sass,scss}\""
+    "format": "prettier --write \"./**/*.{ts,tsx,js,jsx,json,md,css,sass,scss}\"",
+    "test": "vitest"
   },
   "lint-staged": {
     "*.js": "eslint --fix",
@@ -57,6 +58,7 @@
     "@storybook/addon-vitest": "^10.1.8",
     "@storybook/nextjs-vite": "^10.1.8",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/react": "^16.3.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -69,6 +71,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-storybook": "^10.1.8",
     "husky": "^9.1.7",
+    "jsdom": "^27.3.0",
     "lint-staged": "^16.2.7",
     "playwright": "^1.57.0",
     "prettier": "^3.7.4",
@@ -77,6 +80,7 @@
     "tw-animate-css": "^1.4.0",
     "typescript": "^5",
     "vite": "^7.2.7",
+    "vite-tsconfig-paths": "^6.0.0",
     "vitest": "^4.0.15"
   }
 }
