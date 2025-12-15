@@ -54,7 +54,7 @@ export default function Login() {
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="Your email: name@example.com"
+                      placeholder="Please enter your email"
                       {...field}
                     />
                   </FormControl>

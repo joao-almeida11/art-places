@@ -17,6 +17,11 @@ export const passwordValidation = z
     message: "Must include a special character",
   });
 
+// --- Username validation ---
+export const usernameValidation = z.string().min(2, {
+  message: "Invalid username",
+});
+
 // --- Email validation ---
 export const emailValidation = z.email("Invalid email address");
 
